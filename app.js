@@ -15,7 +15,7 @@ const io = socketio(server);
 const Chat = require("./models/chat");
 
 mongoose
-  .connect("mongodb+srv://admin:pOBKPRJoEUFXnFee@cluster0.mgg6z5b.mongodb.net/test", {
+  .connect("mongodb://localhost:27017", {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true,
