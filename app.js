@@ -16,10 +16,7 @@ const Chat = require("./models/chat");
 
 mongoose
   .connect("mongodb://localhost:27017", {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-    useCreateIndex: true,
-    useFindAndModify: false,
+  
   })
   .then(() => console.log("DB Connected"))
   .catch(() => console.log(err));
